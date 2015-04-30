@@ -1,0 +1,16 @@
+{
+  "name": "plantilla-base",
+  "version": "0.0.0",
+  "authors": [
+    "author <hello@support.com>"
+  ],
+  "description": "Project description",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "jquery": ">= 1.9.1",
+    "font-awesome": "*"
+  }
+}

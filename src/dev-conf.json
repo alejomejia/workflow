@@ -1,0 +1,11 @@
+{
+	"siteTitle":"Title here",
+	"assets_path": "",
+	"voice_recognition": true,
+	"pagesExtension":"jade",
+	"path": {
+		"libs": "lib",
+		"img": "img"
+	},
+	"enable_uploads":"true"
+}
