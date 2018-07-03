@@ -1,8 +1,7 @@
 const gulp = require('gulp'),
   pug = require('gulp-pug'),
   sass = require('gulp-sass'),
-  autoprefixer = require('gulp-autoprefixer'),
-  browserSync = require('browser-sync').create();
+  autoprefixer = require('gulp-autoprefixer');
 
 /* ### Methods ### */
 
@@ -32,14 +31,7 @@ gulp.task('sass', () =>
 
 gulp.task('default', () => {
 
-  browserSync.init({
-    server: './dist/'
-  });
-
   /* Watch files for changes to compile */
-  gulp.watch('./*.html').on('change', browserSync.reload);
-  gulp.watch('./*.css').on('change', browserSync.reload);
-  gulp.watch('./*.js').on('change', browserSync.reload);
   gulp.watch('./dev/views/**/*.pug', gulp.series('pug'));
   gulp.watch('./dev/sass/*.sass', gulp.series('sass'));
 
